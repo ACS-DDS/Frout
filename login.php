@@ -40,8 +40,9 @@ for ($m=0; $m < sizeof($id); $m++) {
 			 	for ($n=0; $n < sizeof($mdp); $n++) { 
 					if (strcmp($mdp[$n] , "\"".$_POST['password']."\"") == 0) {
 						if ($n == $m) {
-							$_SESSION['ident'] = str_replace('"','', $prenom[$m]." ".$nom[$m]." ".$type[$m]); // Creation du cookie identifiant, 
-							header('Location: http://quentinp.dijon.codeur.online/nodexwood/Page2.php');
+							$_SESSION['ident'] = str_replace('"','', $prenom[$m]." ".$nom[$m]); // Creation du cookie identifiant
+							$_SESSION['type'] = $type[$m];
+							header('Location: http://quentinp.dijon.codeur.online/nodexwood/pageCatalogue.php');
 			 				exit;
 						}
 					}
