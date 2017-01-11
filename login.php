@@ -13,15 +13,11 @@ for($i = 0; $i < $total; $i++){
   $csvdat[] = array($varA, $varB, $varC, $varD, $varE); // Ajout d'élément au tableau
 }
 
-$data = array(); // Tableau de tout le contenue du fichier
-
-for($j = 0; $j < $total; $j++)
-  $data[] = array( $csvdat[$j][0], $csvdat[$j][1], $csvdat[$j][4]); // Ajout d'élément au tableau
-
 $id = array();
 $mdp = array();
 $nom = array();
 $prenom = array();
+$type = array();
 
 for($o = 0; $o < $total; $o++)
   $prenom[] = $csvdat[$o][0];
@@ -35,13 +31,16 @@ for($k = 0; $k < $total; $k++)
 for($l = 0; $l < $total; $l++)
   $mdp[] = $csvdat[$l][3];
 
+for($q = 0; $q < $total; $q++)
+  $type[] = $csvdat[$q][4];
+
 // Verification des identifiant de l'utilisateur (optimisation possible avec des tab associatif)
 for ($m=0; $m < sizeof($id); $m++) { 
 			if (strcmp($id[$m] , "\"".$_POST['identifiant']."\"") == 0) { // Ligne de comparaison tab/POST
 			 	for ($n=0; $n < sizeof($mdp); $n++) { 
 					if (strcmp($mdp[$n] , "\"".$_POST['password']."\"") == 0) {
 						if ($n == $m) {
-							$_SESSION['ident'] = str_replace('"','', $prenom[$m]." ".$nom[$m]); // Creation du cookie identifiant, 
+							$_SESSION['ident'] = str_replace('"','', $prenom[$m]." ".$nom[$m]." ".$type[$m]); // Creation du cookie identifiant, 
 							header('Location: http://quentinp.dijon.codeur.online/nodexwood/Page2.php');
 			 				exit;
 						}
@@ -57,7 +56,6 @@ exit;
 ?>
 
 <!-- Differentes données visible sur login.php -->
-<p><?php print_r($data);?></p>
 <p><?php print_r($id); ?></p>
 <p><?php print_r($mdp); ?></p>
 <!-- ?php echo $csvdat[0][0];? -->
