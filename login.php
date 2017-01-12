@@ -41,7 +41,7 @@ for ($m=0; $m < sizeof($id); $m++) {
 					if (strcmp($mdp[$n] , "\"".$_POST['password']."\"") == 0) {
 						if ($n == $m) {
 							$_SESSION['ident'] = str_replace('"','', $prenom[$m]." ".$nom[$m]); // Creation du cookie identifiant
-							$_SESSION['type'] = $type[$m];
+							$_SESSION['type'] = str_replace('"','', $type[$m]);
 							header('Location: http://quentinp.dijon.codeur.online/nodexwood/pageCatalogue.php');
 			 				exit;
 						}
