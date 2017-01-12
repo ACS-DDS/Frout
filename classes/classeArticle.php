@@ -16,5 +16,21 @@
 			$this->epaisseurs = array_map('trim', explode(',', $array[4]));
 
 		}
+
+		public function getMatiere () {
+			return $this->matiere;
+		}
+
+		public function getLongueur () {
+			return $this->longueur;
+		}
+
+		public function getLargeur () {
+			return $this->largeur;
+		}
+
+		public function getEpaisseurs () {
+			return $this->epaisseurs;
+		}
 	}
 ?>

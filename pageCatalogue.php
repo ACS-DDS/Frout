@@ -9,14 +9,17 @@
 	<title></title>
 </head>
 <body>
-		<h1><?php echo "Bonjour ".$_SESSION['ident']; ?></h1>
-		<h1><?php echo "Type de client ".$_SESSION['type']; ?></h1>
-		<?php $catalogue = Mapper::getCatalogue(trim($_SESSION['type']));
-		// var_dump(Article::);
-		// var_dump($catalogue); 
-		for ($i=0; $i < sizeof($catalogue); $i++)
-			include 'objectCatalogue.php';
-		?>
-
-</body>
+	<main>
+		<article>
+				<h1><?php echo "Bonjour ".$_SESSION['ident']; ?></h1>
+				<?php $catalogue = Mapper::getCatalogue(trim($_SESSION['type']));
+				 for ($i=0; $i < count($catalogue); $i++)
+					include 'objectCatalogue.php';
+				?>
+		</article>
+		<article>
+			<button type="submit" id="btnValidCatalogue">Valider la preselection</button>
+		<article>
+	</main>
+	</body>
 </html>

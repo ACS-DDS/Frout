@@ -1,22 +1,15 @@
 
 <article style="float: right;">
-	<h2><?php var_dump($catalogue[$i]); ?></h2>
+	<h2><?php echo $catalogue[$i]->getMatiere(); ?></h2>
 	<div>
 		<img src="#" name="img" style="height: 200px; width: 200px;">
 	</div>
 		<div>
-			<select name="longueur">
-				<option>test</option>
-				<option>test</option>
-			</select>
-			<select name="largeur">
-				<option>test</option>
-				<option>test</option>
-			</select>
+			<p name="longueur"><?php echo "Dimension : ".$catalogue[$i]->getLongueur()." x ".$catalogue[$i]->getLargeur() ?></p>
 			<select name="epaisseur">
-				<option>test</option>
-				<option>test</option>
-				<option>test</option>
+			<?php foreach ($catalogue[$i]->getEpaisseurs() as $ep) {
+				echo "<option>".$ep." mm"."</option>";
+			} ?>
 			</select>
 		<input type="checkbox" name="valid">
 	</div>

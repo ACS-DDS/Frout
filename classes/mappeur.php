@@ -7,10 +7,10 @@ class Mapper {
 
 		$h = fopen('/home/quentinp/nodexwood/produits.csv', 'r');
 
-		while ($colonne = fgetcsv($h, 0, ';')) {
-			$typos = array_map('trim', explode(',', $colonne[5]));
+		while ($ligne = fgetcsv($h, 0, ';')) {
+			$typos = array_map('trim', explode(',', $ligne[5]));
 			if (in_array($typo, $typos)) {
-				$cat[] = new Article($colonne);
+				$cat[] = new Article($ligne);
 			}
 		}
 		return $cat;
