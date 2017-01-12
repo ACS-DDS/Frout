@@ -17,9 +17,6 @@ require 'classes/mappeur.php'; ?>
 					include 'objectCatalogue.php';
 				?>
 		</article>
-		<article>
-			<button type="submit" id="btnValidCatalogue">Valider la preselection</button>
-		<article>
 	</main>
 	</body>
 </html>

@@ -1,4 +1,5 @@
 <?php
+require "classes/classeArticle.php";
 
 class Mapper {
 
@@ -14,5 +15,16 @@ class Mapper {
 			}
 		}
 		return $cat;
+	}
+
+	public static function getProduit ($ref) {
+
+		$h = fopen('/home/quentinp/nodexwood/produits.csv', 'r');
+
+		while ($ligne = fgetcsv($h, 0, ';')) {
+			if ($ref == $ligne[0]) {
+				return new Article($ligne);
+			}
+		}
 	}
 }
