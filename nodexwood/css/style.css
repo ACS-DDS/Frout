@@ -1,0 +1,105 @@
+/*font-family: 'Lato', sans-serif;*/
+
+html{ /*/!\Ne pas toucher svp!*/
+	height: 100%;	
+}
+
+body{	/*/!\Ne pas toucher svp!*/
+	background-image: url('http://quentinp.dijon.codeur.online/nodexwood/img/fond_login.jpg');
+	position: relative;
+  	margin: 0;
+  	padding: 0;
+  	height: 100%;
+}
+
+main{
+	background-color: #FFE5C9;
+	width: 60%;
+	height: 520px;
+	margin: 0 auto;
+	border-radius: 30px;
+	box-shadow: 2px 2px 2px 2px black;
+	transform: translateY(10%);
+}
+
+span{
+	border-bottom: 3px solid black;
+}
+
+.logo{
+	height: 160px;
+	width: 115px;
+	padding-top: 40px;
+	margin-bottom: -150px;
+}
+
+.login{
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 30px;
+	padding-top: 160px;
+}
+
+#identifiant, #password{
+	width: 210px;
+	height: 40px;
+	border-radius: 10px;
+	text-align: center;
+	border: 2px solid black;
+	outline: none;
+	margin-top: 30px;
+}
+
+#identifiant:hover, #password:hover{
+	border-color: #A67459;
+}
+
+#identifiant:focus, #password:focus{
+	border-color: #A67459;
+}
+
+.bouton{
+	width: 120px;
+	height: 40px;
+	border-radius: 10px;
+	border: 1px solid black;
+	outline: none;
+	background-color: #855D47;
+	color: #fff;
+	margin-top: 30px;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+}
+
+.bouton:hover{
+	background-color: #E0DDD6;
+	color: #000;
+}
+
+.bouton:active{
+	background-color: #9C9994;
+}
+
+.erreur_identifiants{
+	color: red;
+	padding-top: 10px;
+	text-align: center;
+}
+
+
+/****FOOTER*** /!\Ne pas toucher svp!*/
+
+footer{
+	position: absolute;
+	bottom: 0;
+	opacity: 0.8;
+	left: 0;
+	right: 0;
+	background-color: #855D47;
+}
+
+.informations_footer{
+	font-family: 'Lato', sans-serif;
+	font-weight: bolder;
+	color: #fff;
+}

@@ -16,7 +16,7 @@ while($tab=fgetcsv($fichier, 0 ,';')){
 		exit;
 	}
 	else {
-		$erreur = "login ou mot de passe incorrect";
+		$erreur = "Identifiants ou mot de passe incorrects";
 	}
 }
 
