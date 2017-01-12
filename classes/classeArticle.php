@@ -32,5 +32,9 @@
 		public function getEpaisseurs () {
 			return $this->epaisseurs;
 		}
+
+		public function getId () {
+			return $this->id;
+		}
 	}
 ?>

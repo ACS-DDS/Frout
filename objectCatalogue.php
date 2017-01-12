@@ -1,6 +1,6 @@
 
-<article style="float: right;">
-	<h2><?php echo $catalogue[$i]->getMatiere(); ?></h2>
+<article>
+	<h2><?php echo $catalogue[$i]->getMatiere()." ".$catalogue[$i]->getId();?></h2>
 	<div>
 		<img src="#" name="img" style="height: 200px; width: 200px;">
 	</div>
