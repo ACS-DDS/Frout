@@ -1,6 +1,3 @@
-<?php if (isset($_SESSION['ident'])) {
-	session_destroy();
-} ?>
 <?php session_start(); ?>
 <!DOCTYPE html>
 <html>
@@ -8,8 +5,9 @@
 	<title>Identification</title>
 </head>
 <body>
+
 	<header>
-		<h1>NoDexWood</h1>
+		<h1>Nodex</h1>
 	</header>
 	<main>
 		<form action="login.php" method="post">
@@ -18,14 +16,14 @@
 				<input type="password" id="password" name="password" placeholder="Mot de passe" />
 			</div>	
 			<div>
-        <button type="submit" id="btnIdentification">Valider</button>
-    	</div>
+        		<button type="submit" id="btnIdentification">Valider</button>
+    		</div>
 		</form>
+<?php if(isset($_SESSION["erreur"])){ ?>
+	<p> <?php echo $_SESSION["erreur"]; ?> </p>
+ <?php } 
+	unset($_SESSION['erreur']);
+ ?>
 	</main>
-	<?php if (isset($_SESSION['erreurs'])): ?>
-		<?php foreach ($_SESSION['erreurs'] as $erreur): ?>
-		<p><?php echo $erreur; ?></p>
-		<?php endforeach; unset($_SESSION['erreurs']); ?>
-	<?php endif; ?>
 </body>
 </html>

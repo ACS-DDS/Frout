@@ -1,6 +1,6 @@
 <?php
 
-class Clients {
+class Client {
 	private $nom;
 	private $prenom;
 	private $login;
@@ -13,4 +13,20 @@ class Clients {
 		$this->typologie = $array[4];
 	}
 
+	public function getTypologie() {
+		return $this->typologie;
+	}
+
+	public function getNom() {
+		return $this->nom;
+	}
+
+	public function getPrenom() {
+		return $this->prenom;
+	}
 }
+
+?>
+
+ 
+
