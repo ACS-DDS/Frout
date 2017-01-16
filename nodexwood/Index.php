@@ -28,9 +28,9 @@
 	</main>
 	<footer>
 		<center><div class="informations_footer">
-			<p>NODEX - 14, rue du Général de Gaule - Z.I. Le Pré vert - 39500 Moirans-en-Montagne<br>
+			<p>NODEX - 14, rue du Général de Gaulle - Z.I. Le Pré vert - 39500 Moirans-en-Montagne<br>
 			Tél: 03.80.45.78.66<br>
-			Copyright © NODEX-Industry</p>
+			Copyright © NODEX-Industrie</p>
 		</div></center>
 	</footer>
 </body>
