@@ -1,5 +1,5 @@
 <?php
-require "classes/classeArticle.php";
+require_once "classes/classeArticle.php";
 
 class Mapper {
 

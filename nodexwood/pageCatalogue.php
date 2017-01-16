@@ -1,7 +1,7 @@
-<?php require 'classes/classeClients.php';
+<?php require_once 'classes/classeClients.php';
 session_start();
-require 'classes/classeArticle.php';
-require 'classes/mappeur.php'; ?>
+require_once 'classes/classeArticle.php';
+require_once 'classes/mappeur.php'; ?>
 
 <!DOCTYPE html>
 <html>

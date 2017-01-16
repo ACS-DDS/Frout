@@ -1,6 +1,6 @@
 <?php 
-	class Article 
-	{
+	class Article {
+		
 		private $id;
 		private $matiere;
 		private $longueur;
