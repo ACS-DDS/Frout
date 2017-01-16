@@ -173,7 +173,28 @@ span{
 	background-color: #fff;
 }
 
+.global {
+	height: auto;
+	width: 98%;
+}
 
+.largeur {
+	width: auto; 
+	height: 20px; 
+	margin-bottom: 25px;
+	
+}
+
+
+#canvas_container {
+	box-shadow: 3px 3px 3px 3px #717375;
+
+}
+
+#SvgjsRect1007 {
+	opacity: 0.4;
+	fill : white;
+}
 /****FOOTER*** /!\Ne pas toucher svp!*/
 
 footer{
