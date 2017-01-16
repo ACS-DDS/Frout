@@ -12,6 +12,14 @@ body{	/*/!\Ne pas toucher svp!*/
   	height: 100%;
 }
 
+.body_catalogue{
+	background-image: url('http://quentinp.dijon.codeur.online/nodexwood/img/fond_catalogue.jpg');
+	position: relative;
+  	margin: 0;
+  	padding: 0;
+  	height: 100%;
+}
+
 main{
 	background-color: #FFE5C9;
 	width: 60%;
@@ -84,6 +92,85 @@ span{
 	color: red;
 	padding-top: 10px;
 	text-align: center;
+}
+
+.titre_bonjour{
+	font-family: 'Lato', sans-serif;
+	font-size: 45px;
+}
+
+.vignette{
+	background-color: #FFFAF2;
+	width: 14%;
+	box-shadow: 2px 2px 0px 2px #717375;
+	float: left;
+	margin-left: 9%;
+	margin-top: 5%;	
+	border: 1px solid black;
+}
+
+.essence{
+	font-family: 'Lato', sans-serif;
+	text-transform:capitalize;
+	padding-left: 8%;
+}
+
+.reference{
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	padding-left: 8%;
+	margin-top: -20px;
+}
+
+.img-matiere{
+	height: auto;
+	width: 100%;
+}
+
+.dimension{
+	padding-left: 6%;
+	font-family: 'Lato', sans-serif;
+}
+
+.epaisseur{
+	width: 35%;
+	height: 25px;
+	outline: none;
+	font-family: 'Lato', sans-serif;
+}
+
+.epaisseur:hover{
+	border-color: #A67459;
+}
+
+.epaisseur:focus{
+	border-color: #A67459;
+}
+
+.decoupe{
+	width: 40%;
+	height: 30px;
+	margin-left: 20px;
+	outline: none;
+	border-color: #A67459;
+	background-color: #855D47;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+}
+
+.decoupe:active{
+	color: #fff;
+	background-color: #4E9A26;
+}
+
+.bas_vignette{
+	margin-left: 35px;
+	margin-bottom: 15px;
+}
+
+.option{
+	background-color: #fff;
 }
 
 
